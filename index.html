@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadrack Kiluma | Portfolio</title>
+
+    <style>
+        html {
+    scroll-behavior: smooth;
+}
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a;
+            color: #f1f5f9;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 80px;
+            background-color: #3a1e3b;
+        }
+
+        header h1 {
+            font-size: 22px;
+            color: #38bdf8;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #f1f5f9;
+            margin-left: 25px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin-bottom: 30px;
+            color: #cbd5e1;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background-color: #38bdf8;
+            border: none;
+            color: #0f172a;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0ea5e9;
+        }
+
+        section {
+            padding: 80px;
+            text-align: center;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: #1e293b;
+            padding: 30px;
+            width: 250px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e293b;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+
+            section {
+                padding: 40px 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Shadrack Kiluma</h1>
+        <nav>
+            <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+
+        <h2>Hello, I'm <span>Shadrack</span></h2>
+        <p>
+            Criminology student passionate about GIS, crime mapping, and technology.
+            Currently building my skills in web development and version control.
+        </p>
+        <button class="btn">View My Work</button>
+    </div>
+
+    <section>
+
+
+
+
+        <section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a criminology student with strong interest in Geographic Information Systems (GIS),
+        crime mapping, and data-driven security solutions. I am currently transitioning into
+        software development to combine technology and crime analysis.
+    </p>
+<section id="skills">
+
+
+        <h2>My Skills</h2>
+
+        <div class="skills">
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, Git & GitHub fundamentals.</p>
+            </div>
+
+            <div class="card">
+                <h3>GIS & Crime Mapping</h3>
+                <p>Spatial analysis, hotspot mapping, crime profiling.</p>
+            </div>
+
+            <div class="card">
+                <h3>Research & Analysis</h3>
+                <p>Crime trends, offender profiling, policy evaluation.</p>
+            </div>
+        </div>
+    </section>
+<section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h3>Let's Connect</h3>
+
+            <p>
+                I'm always open to discussing internships,
+                collaborations, web development projects,
+                criminology research and GIS projects.
+            </p>
+
+            <p><strong>Email:</strong> callmeshedi@gmail.com</p>
+
+            <p><strong>Phone:</strong> +254 794818098</p>
+
+            <p><strong>Location:</strong> Nairobi,Kenya</p>
+
+            <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/CallmeShedi" target="_blank">CallmeShedi</a>
+            </p>
+
+            <p>
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/shadrack-kiluma-539b48290" target="_blank">Shadrack Kiluma</a>
+            </p>
+
+        </div>
+
+        <div class="contact-form">
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <textarea
+                    placeholder="Write your message..."
+                    rows="6"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+    <footer>
+        © 2026 Shadrack Kiluma | All Rights Reserved
+    </footer>
+
+</body>
+</html>
